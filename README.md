@@ -1,6 +1,8 @@
 # l3techconf
 Repo for demonstrating basic Kubernetes usage
 
+This repo: https://github.com/maxberglemontree/l3techconf/tree/main
+
 ### Requirements
 You must be able to run `snap`.
 
