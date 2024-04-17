@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: purchase
+spec:
+  selector:
+    matchLabels:
+      app: l3-purchase-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: l3-purchase-app
+    spec:
+      containers:
+      - name: l3-purchase-container
+        image: maxberglemontree/l3purchaseservice:v1
+        ports:
+        - containerPort: 5000
+

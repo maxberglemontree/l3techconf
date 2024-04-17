@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: l3-purchase-service
+spec:
+  selector:
+    app: l3-purchase-app
+  ports:
+    - port: 80
+      targetPort: 5000
+

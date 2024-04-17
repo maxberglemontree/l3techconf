@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  selector:
+    matchLabels:
+      app: frontend-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: frontend-app
+    spec:
+      containers:
+      - name: frontend-container
+        image: maxberglemontree/l3techconffrontend:v5
+        env:
+        - name: BACKEND_URL
+          value: http://l3-purchase-service/hello
+        ports:
+        - containerPort: 5001
+
