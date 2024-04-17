@@ -1,5 +1,5 @@
--# l3techconf
--Repo for demonstrating basic Kubernetes usage
+# l3techconf
+Repo for demonstrating basic Kubernetes usage
 
 ### Requirements
 You must be able to run `snap`.
